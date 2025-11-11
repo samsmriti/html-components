@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.top-image {
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  z-index: -1;
+}
+
+.bottom-image {
+  position: absolute;
+  bottom: -70%;
+  right: -10%;
+  z-index: -1;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 4px 16px -2px hsla(186, 93%, 29%, 0.774),
+    0px 0px 5px -4px hsla(186, 90%, 27%, 0.577);
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-card-header-background {
+  height: 120px;
+  width: 100%;
+  background-image: url("../starter/images/bg-pattern-card.svg");
+}
+
+.profile-card-header-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-image: url(../starter/images/image-victor.jpg);
+  background-color: burlywood;
+  margin-top: -50px;
+  border: 4px solid white;
+}
+
+.profile-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.profile-card-body-details {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.profile-card-body-details-age {
+  font-size: 1rem;
+  color: grey;
+}
+
+.profile-card-body-location {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.profile-card-footer {
+  display: flex;
+}
+
+.profile-card-footer-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+  align-items: center;
+
+  p {
+    color: grey;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+  }
+}
+
+hr {
+  border: 0.25px solid rgb(230, 230, 230);
+}
+
+@media (width <= 30em) {
+  .profile-card {
+    max-width: 320px;
+  }
+}
